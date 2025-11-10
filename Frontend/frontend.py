@@ -5,7 +5,7 @@ import time
 BACKEND_URL = "http://localhost:8000/data"
 
 st.set_page_config(page_title="ESP Sensor Dashboard", layout="wide")
-st.title("🌡️ IoT Dashboard: Temperature & Humidity")
+st.title("IoT Dashboard: Temperature & Humidity")
 
 placeholder = st.empty()
 
@@ -18,7 +18,7 @@ while True:
             data = {}
 
         with placeholder.container():
-            st.subheader("📡 Connected Nodes")
+            st.subheader("Connected Nodes")
             if not data:
                 st.info("Waiting for ESP nodes to send data...")
             else:
